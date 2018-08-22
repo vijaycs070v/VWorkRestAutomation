@@ -1,0 +1,28 @@
+{
+"id":123,
+"account":"ABC1234",
+"isIndian":true,
+"skils":["java","javascript",1,3],
+"persionaldetails":{
+					"firstname" :"Fname",
+					"lastname": "Lname"
+					},
+					
+"mobiles":[
+			{
+			"operator":"airtel",
+			"mob":"8888888888"		
+			},
+			
+			{
+			"operator":"vodafone",
+			"mob":"7777777777"
+			},
+			
+			{
+			"operator":"jio",
+			"mob":"6666666666"
+			}
+
+		]
+}
