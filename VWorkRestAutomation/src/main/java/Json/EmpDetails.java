@@ -1,13 +1,15 @@
 package Json;
 
+import java.util.List;
+
 public class EmpDetails {
 
 	private int id;
 	private String account;
 	private boolean isIndian;
-	private Object[] skils;
+	private List<String> skils;
 	private Persionaldetails persionaldetails;
-	private Mobiles[] mobiles;
+	private List<Mobiles> mobiles;
 	
 	
 	public int getId() {
@@ -28,10 +30,10 @@ public class EmpDetails {
 	public void setIndian(boolean isIndian) {
 		this.isIndian = isIndian;
 	}
-	public Object[] getSkils() {
+	public List<String> getSkils() {
 		return skils;
 	}
-	public void setSkils(Object[] skils) {
+	public void setSkils(List<String> skils) {
 		this.skils = skils;
 	}
 	public Persionaldetails getPersionaldetails() {
@@ -42,10 +44,10 @@ public class EmpDetails {
 	}
 	
 	
-	public Mobiles getMobiles(int index) {
-		return mobiles[index];
+	public List<Mobiles> getMobiles() {
+		return mobiles;
 	}
-	public void setMobiles(Mobiles[] mobiles) {
+	public void setMobiles(List<Mobiles> mobiles) {
 		this.mobiles = mobiles;
 	}
 	

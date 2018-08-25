@@ -1,0 +1,2 @@
+testdata=./src/main/java/data/TestData.csv
+configreader=./src/main/java/com/vwork/configuration/config.property
