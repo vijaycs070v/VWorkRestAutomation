@@ -1,4 +1,4 @@
-package TrainingMaven.TrainingMaven;
+package tests;
 
 import com.vwork.datahandler.DataReader;
 
