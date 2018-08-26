@@ -14,22 +14,17 @@ import Utils.JsonUtils;
 import Utils.RestClient;
 import base.Base;
 
-public class TestPostResponse extends Base{
+public class TestGetResponse extends Base{
 
 	@Test
 	public void getResponse() throws JsonGenerationException, JsonMappingException, IOException
 	{
-		EmpDetails o=PayLoad.getEmpDetailsPayLoad();//16, "test6", "Author6"
 		
-		
-		String jsonstring=JsonUtils.marshling(o); //converted POJO object to json string
-	   // System.out.println(jsonstring); 
-	    
-		RestClient.post("http://localhost:3000/customers",jsonstring); //send json string as payload
+		RestClient.getRequest("http://localhost:3000/customers");
 		
 		String respString=response.asString();
 		System.out.println(respString);
-				
+		
 		
 	}
 	

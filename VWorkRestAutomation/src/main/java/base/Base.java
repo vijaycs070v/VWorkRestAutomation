@@ -12,4 +12,9 @@ public class Base {
 	public Base() {
 		 reader=new DataReader("./src/main/java/data/TestData.csv","TC001");
 	}
+	
+	public String getData(String key)
+	{
+		return reader.readData(key);
+	}
 }

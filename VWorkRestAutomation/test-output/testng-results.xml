@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="2750" started-at="2018-08-26T15:43:43Z" finished-at="2018-08-26T15:43:45Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="2750" started-at="2018-08-26T15:43:43Z" finished-at="2018-08-26T15:43:45Z">
+      <class name="tests.TestPostResponse">
+        <test-method status="PASS" signature="getResponse()[pri:0, instance:tests.TestPostResponse@d8355a8]" name="getResponse" duration-ms="2703" started-at="2018-08-26T15:43:43Z" finished-at="2018-08-26T15:43:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResponse -->
+      </class> <!-- tests.TestPostResponse -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

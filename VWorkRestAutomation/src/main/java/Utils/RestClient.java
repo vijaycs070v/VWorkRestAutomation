@@ -1,19 +1,21 @@
-package base;
+package Utils;
 
 import java.util.HashMap;
 import java.util.Map;
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.http.ContentType;
 
+import base.Base;
 
-public class HTTPClient extends Base {
+
+public class RestClient extends Base {
 
 	 
 	 Map<String, String> headerMap=new HashMap<String, String>();
 	 HashMap<String,Boolean> responseMap=new HashMap<String,Boolean>();
 	 String uri;
 	 
-	 public  HTTPClient()
+	 public  RestClient()
 	 {
 		 headerMap.put("usaa-gateway-proof", "sdllkgdjgq239593242ikk4ktkerjtiejreutu");
 		 headerMap.put("usaa-activity","kdgjskfjalfowiedfgdf");

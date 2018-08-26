@@ -19,6 +19,6 @@ public class TestEmpPayload {
 		
 		EmpDetails ee=mapper.readValue(s,EmpDetails.class);
 		System.out.println(ee.getMobiles().get(0).getMob());
-		System.out.println(ee.getSkils().get(0));
+		System.out.println(ee.getSkils().get(1));
 	}
 }
