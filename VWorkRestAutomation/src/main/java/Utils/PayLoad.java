@@ -6,9 +6,9 @@ import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import Json.EmpDetails;
-import Json.Mobiles;
-import Json.Persionaldetails;
+import pages.EmpDetails;
+import pages.Mobiles;
+import pages.Persionaldetails;
 
 public class PayLoad {
 

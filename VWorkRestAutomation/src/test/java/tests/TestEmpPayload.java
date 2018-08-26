@@ -3,8 +3,8 @@ package tests;
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import Json.EmpDetails;
 import Utils.PayLoad;
+import pages.EmpDetails;
 
 public class TestEmpPayload {
 

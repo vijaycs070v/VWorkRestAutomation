@@ -1,16 +1,9 @@
 package tests;
 
 import java.io.IOException;
-
 import org.testng.annotations.Test;
-
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-
-
-import Json.EmpDetails;
-import Utils.JsonUtils;
-import Utils.PayLoad;
 import Utils.RestClient;
 import base.Base;
 
