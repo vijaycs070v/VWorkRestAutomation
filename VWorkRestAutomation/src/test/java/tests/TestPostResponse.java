@@ -9,8 +9,8 @@ import com.fasterxml.jackson.databind.JsonMappingException;
 
 
 import Json.EmpDetails;
-import Json.PayLoad;
 import Utils.JsonUtils;
+import Utils.PayLoad;
 import Utils.RestClient;
 import base.Base;
 

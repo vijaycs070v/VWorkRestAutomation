@@ -1,10 +1,14 @@
-package Json;
+package Utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import Json.EmpDetails;
+import Json.Mobiles;
+import Json.Persionaldetails;
 
 public class PayLoad {
 

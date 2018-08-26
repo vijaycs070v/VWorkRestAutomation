@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import Json.EmpDetails;
-import Json.PayLoad;
+import Utils.PayLoad;
 
 public class TestEmpPayload {
 
