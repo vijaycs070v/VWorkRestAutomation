@@ -1,7 +1,8 @@
 package base;
 
-import com.jayway.restassured.response.Response;
 import com.vwork.datahandler.DataReader;
+
+import io.restassured.response.Response;
 
 public class Base {
 

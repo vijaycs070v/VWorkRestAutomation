@@ -2,10 +2,9 @@ package Utils;
 
 import java.util.HashMap;
 import java.util.Map;
-import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.http.ContentType;
-
 import base.Base;
+import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 
 
 public class RestClient extends Base {
