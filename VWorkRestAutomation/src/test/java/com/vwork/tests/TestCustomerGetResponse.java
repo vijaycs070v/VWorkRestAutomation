@@ -10,7 +10,7 @@ import com.vwork.base.Base;
 import com.vwork.flow.Flow;
 import com.vwork.utils.RestClient;
 
-public class TestGetResponse extends Base{
+public class TestCustomerGetResponse extends Base{
 
 	@Test
 	public void getResponse() throws JsonGenerationException, JsonMappingException, IOException
