@@ -1,4 +1,4 @@
-package pages;
+package com.vwork.pojo;
 
 public class Mobiles {
 

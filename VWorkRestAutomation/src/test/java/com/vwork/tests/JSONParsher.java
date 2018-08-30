@@ -1,4 +1,4 @@
-package tests;
+package com.vwork.tests;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

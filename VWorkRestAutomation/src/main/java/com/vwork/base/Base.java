@@ -1,4 +1,6 @@
-package base;
+package com.vwork.base;
+
+import java.util.HashMap;
 
 import com.vwork.datahandler.DataReader;
 
@@ -9,6 +11,8 @@ public class Base {
 	static DataReader reader;
 	public static Response response;
     public static int resopnsecode;
+    public static HashMap<String,Boolean> responseMap=new HashMap<String,Boolean>();
+    public static boolean testpass;
 
 	public Base() {
 		 reader=new DataReader("./src/main/java/data/TestData.csv","TC001");

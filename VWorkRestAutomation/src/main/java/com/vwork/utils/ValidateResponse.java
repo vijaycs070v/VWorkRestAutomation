@@ -1,15 +1,17 @@
-package base;
+package com.vwork.utils;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
+import com.vwork.base.Base;
+
 public class ValidateResponse extends Base{
 
-	HashMap<String,Boolean> responseMap=new HashMap<String,Boolean>();
 	
-	public String getAttributeValue(String key)
+	
+	public static String getAttributeValue(String key)
 	{
 		String value=response
 				.getBody()
@@ -18,15 +20,15 @@ public class ValidateResponse extends Base{
 		return value;
 	}
 	
-	public void storeResposeToMap(String value)
+	public static void storeResposeToMap(String responsevalue, String expectevalue)
 	{
-		if(value.equalsIgnoreCase("ABC") )
+		if(responsevalue.equalsIgnoreCase(expectevalue) )
 		{
-			responseMap.put("Expected :"+"ABC"+"Actual :"+value, true); //read expected value from excel
+			responseMap.put("Expected :"+expectevalue+"Actual :"+responsevalue, true); //read expected value from excel
 		}
 		else
 		{
-			responseMap.put("Expected :"+"ABC"+"Actual :"+value, false);
+			responseMap.put("Expected :"+expectevalue+"Actual :"+responsevalue, false);
 		}
 	}
 	
@@ -40,7 +42,7 @@ public class ValidateResponse extends Base{
 			System.out.println(e.getKey()+"  "+e.getValue());
 		}
 	}
-	public boolean validateHTTPResponse()
+	public static boolean validateHTTPResponse()
 	{
 		int passcount=0;
 		int failcount=0;

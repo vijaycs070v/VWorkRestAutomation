@@ -1,4 +1,4 @@
-package tests;
+package com.vwork.tests;
 
 import com.vwork.datahandler.DataReader;
 

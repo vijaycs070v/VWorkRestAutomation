@@ -1,11 +1,14 @@
-package tests;
+package com.vwork.tests;
 
 import java.io.IOException;
+
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
-import Utils.RestClient;
-import base.Base;
+import com.vwork.base.Base;
+import com.vwork.flow.Flow;
+import com.vwork.utils.RestClient;
 
 public class TestGetResponse extends Base{
 
@@ -13,11 +16,9 @@ public class TestGetResponse extends Base{
 	public void getResponse() throws JsonGenerationException, JsonMappingException, IOException
 	{
 		
-		RestClient.getRequest("http://localhost:3000/customers");
-		
-		String respString=response.asString();
-		System.out.println(respString);
-		
+		Flow f=new Flow();
+		f.testGetResponse();
+		Assert.assertTrue(testpass);
 		
 	}
 	

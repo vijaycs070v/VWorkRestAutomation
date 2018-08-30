@@ -1,10 +1,10 @@
-package tests;
+package com.vwork.tests;
 
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import Utils.PayLoad;
-import pages.EmpDetails;
+import com.vwork.pojo.EmpDetails;
+import com.vwork.utils.PayLoad;
 
 public class TestEmpPayload {
 

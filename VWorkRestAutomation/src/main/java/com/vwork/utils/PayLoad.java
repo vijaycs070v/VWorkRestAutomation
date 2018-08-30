@@ -1,15 +1,14 @@
-package Utils;
+package com.vwork.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import base.Base;
-import pages.EmpDetails;
-import pages.Mobiles;
-import pages.Persionaldetails;
+import com.vwork.base.Base;
+import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.Mobiles;
+import com.vwork.pojo.Persionaldetails;
 
 public class PayLoad extends Base{
 

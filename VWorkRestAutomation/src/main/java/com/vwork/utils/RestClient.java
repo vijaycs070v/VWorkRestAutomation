@@ -1,9 +1,11 @@
-package Utils;
+package com.vwork.utils;
 
 import java.util.HashMap;
 import java.util.Map;
-import base.Base;
-import io.restassured.RestAssured;
+
+import com.vwork.base.Base;
+
+import static io.restassured.RestAssured.given;
 import io.restassured.http.ContentType;
 
 
@@ -23,7 +25,7 @@ public class RestClient extends Base {
 	 public static void getRequest(String url)
 		{
 			
-			response=RestAssured.given()
+			response=given()
 					.contentType(ContentType.JSON)
 					//.headers(headerMap)
 					//.pathParam("userid", pathparam)
@@ -39,7 +41,7 @@ public class RestClient extends Base {
 	public  static void getPathParam(String url, String pathparam)
 	{
 		
-		response=RestAssured.given()
+		response=given()
 				.contentType(ContentType.JSON)
 				//.headers(headerMap)
 				.pathParam("userid", pathparam)
@@ -57,7 +59,7 @@ public class RestClient extends Base {
 	{
 		
 		
-		response= RestAssured.given()
+		response= given()
 				.contentType(ContentType.JSON)
 			//	.headers(headerMap)
 				.queryParam("id", 4)
@@ -77,7 +79,7 @@ public class RestClient extends Base {
 	}
 	public static void post(String url, String JsonString )
 	{
-		 response=RestAssured.given()
+		 response=given()
 				//.headers(headerMap)
 				.when()
 				.contentType(ContentType.JSON)
