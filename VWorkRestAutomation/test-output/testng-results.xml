@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3129" started-at="2018-08-31T00:56:09Z" finished-at="2018-08-31T00:56:13Z">
+  <suite name="Default suite" duration-ms="2693" started-at="2018-08-31T01:54:42Z" finished-at="2018-08-31T01:54:45Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3129" started-at="2018-08-31T00:56:09Z" finished-at="2018-08-31T00:56:13Z">
+    <test name="Default test" duration-ms="2693" started-at="2018-08-31T01:54:42Z" finished-at="2018-08-31T01:54:45Z">
       <class name="com.vwork.tests.TestCustomerGetResponse">
-        <test-method status="FAIL" signature="getResponse()[pri:0, instance:com.vwork.tests.TestCustomerGetResponse@5622fdf]" name="getResponse" duration-ms="3071" started-at="2018-08-31T00:56:09Z" finished-at="2018-08-31T00:56:13Z">
+        <test-method status="FAIL" signature="getResponse()[pri:0, instance:com.vwork.tests.TestCustomerGetResponse@1dd02175]" name="getResponse" duration-ms="2660" started-at="2018-08-31T01:54:42Z" finished-at="2018-08-31T01:54:45Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
 at com.vwork.datahandler.CSVReader.readData(CSVReader.java:41)
 at com.vwork.datahandler.DataReader.readData(DataReader.java:40)
-at com.vwork.base.Base.getData(Base.java:23)
-at com.vwork.pages.CustomerDetailsPage.validateCustomerGetRequest(CustomerDetailsPage.java:44)
+at com.vwork.base.Base.getData(Base.java:34)
+at com.vwork.pages.CustomerDetailsPage.validateCustomerGetRequest(CustomerDetailsPage.java:45)
 at com.vwork.flow.Flow.testGetResponse(Flow.java:17)
 at com.vwork.tests.TestCustomerGetResponse.getResponse(TestCustomerGetResponse.java:20)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
