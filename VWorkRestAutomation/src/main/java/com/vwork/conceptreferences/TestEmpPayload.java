@@ -1,4 +1,4 @@
-package com.vwork.tests;
+package com.vwork.conceptreferences;
 
 import java.io.IOException;
 import org.testng.annotations.Test;

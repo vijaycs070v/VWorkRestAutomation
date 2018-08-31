@@ -1,4 +1,4 @@
-package com.vwork.tests;
+package com.vwork.conceptreferences;
 
 import com.vwork.datahandler.DataReader;
 
