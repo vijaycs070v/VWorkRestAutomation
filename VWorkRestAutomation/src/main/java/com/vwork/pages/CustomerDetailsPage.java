@@ -14,7 +14,8 @@ public class CustomerDetailsPage extends Base {
 	public CustomerDetailsPage getResponse()
 	{
 
-		RestClient.getRequest("http://localhost:3000/customers");
+		String uri=Utility.getUrl(getData("resourceURL"));
+		RestClient.getRequest(uri);
 		
 		String respString=response.asString();
 		System.out.println(respString);

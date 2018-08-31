@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 import com.vwork.datahandler.DataReader;
 import com.vwork.datahandler.IDataReader;
+import com.vwork.utils.Utility;
 
 import io.restassured.response.Response;
 
@@ -25,7 +26,7 @@ public class Base {
 
 
 	public Base() {
-		reader=new DataReader("./src/main/java/data/TestData.csv","TC001");
+		reader=new DataReader(Utility.getPath("testdata"),"TC001");
 	}
 
 	public static String getData(String key)

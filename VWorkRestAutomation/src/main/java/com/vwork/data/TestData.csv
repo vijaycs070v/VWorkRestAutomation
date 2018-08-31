@@ -1,2 +1,2 @@
-#column,URL,StatusCode,id,account,isIndian,skils[0],skils[1],persionaldetails.firstname,lastname.lastname,mobiles[0].operator,mobiles[0].mob,mobiles[1].operator,mobiles[1].mob,mobiles[2].operator,mobiles[2].mob
-TC001,http://localhost/customers/2,200,3,ABC1234,TRUE,java,C#,Fname,Lname,airtel,5555555555,vodafone,11111111,jio,6666666666
+#column,resourceURL,StatusCode,id,account,isIndian,skils[0],skils[1],persionaldetails.firstname,lastname.lastname,mobiles[0].operator,mobiles[0].mob,mobiles[1].operator,mobiles[1].mob,mobiles[2].operator,mobiles[2].mob
+TC001,/customers,200,3,ABC1234,TRUE,java,C#,Fname,Lname,airtel,5555555555,vodafone,11111111,jio,6666666666
