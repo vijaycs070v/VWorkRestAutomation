@@ -14,8 +14,9 @@ public class Flow extends Base{
 	public void testGetResponse()
 	{
 		CustomerDetailsPage customerDetailsPage=new CustomerDetailsPage();
-		customerDetailsPage.getResponse().validateCustomerGetRequest();
-		testpass=customerDetailsPage.isValidResponse();
+		customerDetailsPage.getResponse()
+		.validateCustomerGetRequest();
+		//testpass=customerDetailsPage.isValidResponse();
 		
 	}
 	

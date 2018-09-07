@@ -1,15 +1,20 @@
 package com.vwork.pojo;
 
 import java.util.List;
+import java.util.Map;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class EmpDetails {
 
 	private int id;
 	private String account;
+	//@JsonProperty("isIndian")
 	private boolean isIndian;
 	private List<String> skils;
 	private Persionaldetails persionaldetails;
 	private List<Mobiles> mobiles;
+	private Map<String, String> properties;
 	
 	
 	public int getId() {
@@ -18,16 +23,22 @@ public class EmpDetails {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getAccount() {
+	public String getAccount()  // Json key will be "Account". remove "get" prefix. Key name doesn't depend on variable or set method
+	
+	{
 		return account;
 	}
 	public void setAccount(String account) {
 		this.account = account;
 	}
-	public boolean isIndian() {
+	
+	//@JsonProperty("isIndian")
+	public boolean getIsIndian() {
 		return isIndian;
 	}
-	public void setIndian(boolean isIndian) {
+	
+	//@JsonProperty("isIndian")
+	public void setIsIndian(boolean isIndian) {
 		this.isIndian = isIndian;
 	}
 	public List<String> getSkils() {
@@ -51,5 +62,11 @@ public class EmpDetails {
 		this.mobiles = mobiles;
 	}
 	
+	public Map<String, String> getProperties() {
+		return properties;
+	}
+	public void setProperties(Map<String, String> properties) {
+		this.properties = properties;
+	}
 	
 }

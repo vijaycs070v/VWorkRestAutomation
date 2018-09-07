@@ -2,7 +2,7 @@
 "id":123,
 "account":"ABC1234",
 "isIndian":true,
-"skils":["java","javascript",1,3],
+"skils":["java","C#"],
 "persionaldetails":{
 					"firstname" :"Fname",
 					"lastname": "Lname"
@@ -24,5 +24,10 @@
 			"mob":"6666666666"
 			}
 
-		]
+		],
+		
+"properties": {
+   			  "age": "29 years",
+    		  "salary": "1000 USD"
+  			 }
 }

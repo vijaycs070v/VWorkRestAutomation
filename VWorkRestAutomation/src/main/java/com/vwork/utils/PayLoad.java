@@ -2,7 +2,9 @@ package com.vwork.utils;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vwork.base.Base;
@@ -17,7 +19,7 @@ public class PayLoad extends Base{
 		EmpDetails e=new EmpDetails();
 		e.setId(Integer.parseInt(getData("id")));
 		e.setAccount(getData("account"));
-		e.setIndian(Boolean.parseBoolean(getData("isIndian")));
+		e.setIsIndian(Boolean.parseBoolean(getData("isIndian")));
 		
 		List<String> sk=new ArrayList<String>();
 		sk.add(getData("skils[0]"));
@@ -47,14 +49,14 @@ public class PayLoad extends Base{
 		m3.setMob(Long.parseLong(getData("mobiles[2].mob")));
 		mob.add(m3);
 		
+		Map<String, String> props = new HashMap<String, String>();
+		props.put("salary", getData("salary"));
+		props.put("age", getData("age"));
+		e.setProperties(props);
+		
+		
 		e.setMobiles(mob);
 		
-		/*String s=mapper.writeValueAsString(e); //json string
-		System.out.println(s);
-		
-		EmpDetails ee=mapper.readValue(s,EmpDetails.class);
-		System.out.println(ee.getMobiles().get(0).getMob());
-		System.out.println(ee.getSkils().get(0));*/
 		
 		return e;
 		
