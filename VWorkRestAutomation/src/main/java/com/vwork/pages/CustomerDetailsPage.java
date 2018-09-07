@@ -3,7 +3,7 @@ package com.vwork.pages;
 import java.io.IOException;
 
 import com.vwork.base.Base;
-import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.CustomerDetails;
 import com.vwork.utils.Utility;
 import com.vwork.utils.PayLoad;
 import com.vwork.utils.RestClient;
@@ -24,7 +24,7 @@ public class CustomerDetailsPage extends Base {
 	
 	public CustomerDetailsPage postResponse() throws IOException
 	{
-		EmpDetails o=PayLoad.getEmpDetailsPayLoad();//16, "test6", "Author6"
+		CustomerDetails o=PayLoad.getEmpDetailsPayLoad();//16, "test6", "Author6"
 		
 		
 		String jsonstring=Utility.marshling(o); //converted POJO object to json string

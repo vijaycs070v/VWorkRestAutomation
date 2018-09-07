@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import com.vwork.base.Base;
 import com.vwork.pages.CustomerDetailsPage;
-import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.CustomerDetails;
 import com.vwork.utils.Utility;
 import com.vwork.utils.PayLoad;
 import com.vwork.utils.RestClient;

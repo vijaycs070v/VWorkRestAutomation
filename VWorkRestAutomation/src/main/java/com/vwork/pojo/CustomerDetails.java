@@ -5,7 +5,7 @@ import java.util.Map;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class EmpDetails {
+public class CustomerDetails {
 
 	private int id;
 	private String account;

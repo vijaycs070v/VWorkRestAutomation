@@ -3,7 +3,7 @@ package com.vwork.conceptreferences;
 import java.io.IOException;
 import org.testng.annotations.Test;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.CustomerDetails;
 import com.vwork.utils.PayLoad;
 
 public class TestEmpPayload {
@@ -13,11 +13,11 @@ public class TestEmpPayload {
 	{
 		ObjectMapper mapper=new ObjectMapper();
 		
-		EmpDetails e=PayLoad.getEmpDetailsPayLoad();
+		CustomerDetails e=PayLoad.getEmpDetailsPayLoad();
 		String s=mapper.writeValueAsString(e); //json string
 		System.out.println(s);
 		
-		EmpDetails ee=mapper.readValue(s,EmpDetails.class);
+		CustomerDetails ee=mapper.readValue(s,CustomerDetails.class);
 		System.out.println(ee.getMobiles().get(0).getMob());
 		System.out.println(ee.getSkils().get(1));
 	}

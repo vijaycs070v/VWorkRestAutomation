@@ -8,15 +8,15 @@ import java.util.Map;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vwork.base.Base;
-import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.CustomerDetails;
 import com.vwork.pojo.Mobiles;
 import com.vwork.pojo.Persionaldetails;
 
 public class PayLoad extends Base{
 
-	public static EmpDetails getEmpDetailsPayLoad() throws IOException  {
+	public static CustomerDetails getEmpDetailsPayLoad() throws IOException  {
 		
-		EmpDetails e=new EmpDetails();
+		CustomerDetails e=new CustomerDetails();
 		e.setId(Integer.parseInt(getData("id")));
 		e.setAccount(getData("account"));
 		e.setIsIndian(Boolean.parseBoolean(getData("isIndian")));

@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.vwork.base.Base;
 import com.vwork.flow.Flow;
-import com.vwork.pojo.EmpDetails;
+import com.vwork.pojo.CustomerDetails;
 import com.vwork.utils.Utility;
 import com.vwork.utils.PayLoad;
 import com.vwork.utils.RestClient;
