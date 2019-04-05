@@ -13,7 +13,7 @@ public class CSVReader implements IDataReader{
 	String[] column=null;
 	String[] data=null;
 	Map<String,Integer> index=new HashMap<String, Integer>();
-	public CSVReader(File file, String scenario) {
+	public CSVReader(String file, String scenario) {
 		try(BufferedReader br=new BufferedReader(new FileReader(file)))
 		{
 			while(br.ready())
@@ -37,7 +37,7 @@ public class CSVReader implements IDataReader{
 	}
 
 	@Override
-	public String readData(String key) {
+	public String getData(String key) {
 		return data[index.get(key)];
 	}
 

@@ -9,10 +9,10 @@ import java.util.Properties;
 public class PropertyReader implements IDataReader {
 
 	Properties prop=null;
-	public PropertyReader(File file)
+	public PropertyReader(String file)
 	{
 		try {
-			FileInputStream fis=new FileInputStream(file);
+			FileInputStream fis=new FileInputStream(new File(file));
 		    prop=new Properties();
 			prop.load(fis);
 			
@@ -26,7 +26,7 @@ public class PropertyReader implements IDataReader {
 		}
 	}
 	@Override
-	public String readData(String propertyname) {
+	public String getData(String propertyname) {
 		
 		return prop.getProperty(propertyname);
 	}

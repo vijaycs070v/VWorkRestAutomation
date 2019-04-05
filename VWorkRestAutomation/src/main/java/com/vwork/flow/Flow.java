@@ -2,8 +2,8 @@ package com.vwork.flow;
 
 import java.io.IOException;
 
+import com.vwork.Services.CustomerDetailsPage;
 import com.vwork.base.Base;
-import com.vwork.pages.CustomerDetailsPage;
 import com.vwork.pojo.CustomerDetails;
 import com.vwork.utils.Utility;
 import com.vwork.utils.PayLoad;

@@ -4,13 +4,14 @@ import java.util.HashMap;
 
 import com.vwork.datahandler.DataReader;
 import com.vwork.datahandler.IDataReader;
+import com.vwork.enums.GlobalConstants;
 import com.vwork.utils.Utility;
 
 import io.restassured.response.Response;
 
 public class Base {
 
-	public static DataReader reader;
+	
 	public static IDataReader configReader;
 	public String datafilepath;
 	public static String pathPropertyFile="./src/com/initg/configuration/path.property";
@@ -26,14 +27,15 @@ public class Base {
 
 
 	public Base() {
-		reader=new DataReader(Utility.getPath("testdata"),"TC001");
+				
+		configReader=DataReader.propertyReader(GlobalConstants.PROPERTYFILE_PATH.getValue());
 	}
 
-	public static String getData(String key)
+	
+	public String getPropValue(String prop)
 	{
-		return reader.readData(key);
+		return configReader.getData(prop);
 	}
-
 
 }
 

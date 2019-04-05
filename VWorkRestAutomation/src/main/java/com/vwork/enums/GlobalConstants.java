@@ -1,7 +1,8 @@
 package com.vwork.enums;
 
 public enum GlobalConstants {
-	PATHPROPERTYFILE("./src/main/java/com/vwork/configuration/path.property"),
+	PROPERTYFILE_PATH("./src/main/java/com/vwork/configuration/config.property"),
+	DATAFILE_PATH("./src/main/java/com/vwork/data/TestData.csv"),
 	ENDPOINTURL("http://localhost:3000");
 
 	private	String value;

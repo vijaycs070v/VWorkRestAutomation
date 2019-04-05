@@ -6,19 +6,15 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.vwork.datahandler.DataReader;
+import com.vwork.datahandler.IDataReader;
 import com.vwork.enums.GlobalConstants;
 
 public class Utility {
 
 	static ObjectMapper mapper;
-	 static DataReader pathReader;
 	static {
 		mapper = new ObjectMapper();	
-		try {
-			pathReader=new DataReader(GlobalConstants.PATHPROPERTYFILE.getValue());
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 
 	}
 	
@@ -41,10 +37,6 @@ public class Utility {
 		return result;
 	}
 
-	public static String getPath(String propertyname)
-	{
-		return pathReader.readData(propertyname);
-	}
 	
 	public static String getUrl(String resourcesurl)
 	{

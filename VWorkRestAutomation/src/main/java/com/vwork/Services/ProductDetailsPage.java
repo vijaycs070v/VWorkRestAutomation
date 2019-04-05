@@ -1,4 +1,4 @@
-package com.vwork.pages;
+package com.vwork.Services;
 
 public class ProductDetailsPage {
 

@@ -43,7 +43,7 @@ public class ExcelReader implements IDataReader {
 		}
 	}
 	@Override
-	public String readData(String key) 
+	public String getData(String key) 
 	{		
 		return sheet.getRow(rownum).getCell(columnIndex.get(key)).getStringCellValue();
 		
