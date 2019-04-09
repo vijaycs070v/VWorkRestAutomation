@@ -1,4 +1,4 @@
-package com.vwork.Services;
+package com.vwork.arc;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -21,7 +21,8 @@ public class CustomerDetailsPage extends TestBase {
 	public CustomerDetailsPage getResponse()
 	{
 
-		RestClient.getRequest(getValue("resourceURL"));
+		String uri=Utility.getUrl(getValue("resourceURL"));
+		RestClient.getRequest(uri);
 		
 		String respString=response.asString();
 		System.out.println(respString);
@@ -86,7 +87,59 @@ public class CustomerDetailsPage extends TestBase {
 		
 	}
 	
+	public CustomerDetailsPage validateCustomerGetRequest()
+	{
 		
+		
+		String resCustomerspersionaldetailslname=ValidateResponse.getAttributeValue("persionaldetails.lastname");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resCustomerspersionaldetailslname+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+		
+
+		String resmobiles_0_operator=ValidateResponse.getAttributeValue("mobiles[0].operator");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_0_operator+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+		String resmobiles_0_mob=ValidateResponse.getAttributeValue("mobiles[0].mob");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_0_mob+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+
+		String resmobiles_1_operator=ValidateResponse.getAttributeValue("mobiles[1].operator");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_1_operator+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+		String resmobiles_1_mob=ValidateResponse.getAttributeValue("mobiles[1].mob");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_1_mob+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+
+		String resmobiles_2_operator=ValidateResponse.getAttributeValue("mobiles[2].operator");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_2_operator+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+		String resmobiles_2_mob=ValidateResponse.getAttributeValue("mobiles[2].mob");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resmobiles_2_mob+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+		
+		String resindian=ValidateResponse.getAttributeValue("indian");
+		//String actualCusomername=getData("name");
+		System.out.println(" Value "+resindian+"  Stored in map");
+	//	ValidateResponse.storeResposeToMap(resCustomername, actualCusomername);
+			
+		
+		return this;
+				
+	}
+	
 	public boolean isValidResponse()
 	{
 				

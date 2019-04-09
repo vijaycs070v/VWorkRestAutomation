@@ -1,3 +1,6 @@
-getPathParamURL=http://www.qa01.sampleproject.com
-getQueryParamURL=http://www.qa01.sampleproject.com
+BaseURI=http://localhost:3000
+BasePath=
+AuthURL=
+UserId=
+Pwd=
 

@@ -38,10 +38,6 @@ public class Utility {
 	}
 
 	
-	public static String getUrl(String resourcesurl)
-	{
-		return GlobalConstants.ENDPOINTURL.getValue()+resourcesurl;
-	}
 }
 
 

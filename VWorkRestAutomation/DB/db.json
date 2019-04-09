@@ -1,0 +1,66 @@
+{
+  "customers": [
+    {
+      "id": 2,
+      "isIndian": true,
+      "skils": [
+        "java",
+        "C#"
+      ],
+      "persionaldetails": {
+        "firstname": "Fname",
+        "lastname": "Lname"
+      },
+      "mobiles": [
+        {
+          "operator": "airtel",
+          "mob": 5555555555
+        },
+        {
+          "operator": "vodafone",
+          "mob": 11111111
+        },
+        {
+          "operator": "jio",
+          "mob": 6666666666
+        }
+      ],
+      "account1": "ABC12345"
+    },
+    {
+      "id": 3,
+      "account": "ABC12345",
+      "isIndian": true,
+      "skils": [
+        "java",
+        "C#"
+      ],
+      "persionaldetails": {
+        "firstname": "Fname",
+        "lastname": "Lname"
+      },
+      "mobiles": [
+        {
+          "operator": "airtel",
+          "mob": 5555555555
+        },
+        {
+          "operator": "vodafone",
+          "mob": 11111111
+        },
+        {
+          "operator": "jio",
+          "mob": 6666666666
+        }
+      ],
+      "properties": {
+        "salary": "70000",
+        "age": "23"
+      }
+    }
+  ],
+  "products": {
+    "product_name": "mobile",
+    "producr_id": "P1234"
+  }
+}

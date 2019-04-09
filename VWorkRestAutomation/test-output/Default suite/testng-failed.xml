@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.vwork.tests.Test1">
+      <class name="com.vwork.tests.TestCustomerGetResponse">
         <methods>
           <include name="setup"/>
-          <include name="testing"/>
+          <include name="getResponse"/>
         </methods>
-      </class> <!-- com.vwork.tests.Test1 -->
+      </class> <!-- com.vwork.tests.TestCustomerGetResponse -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -89,5 +89,8 @@ public class RestClient extends Base {
 				
 	}
 
-	
+	public static String getAuthTocken(String url, String userid, String pwd)
+	{
+		return given().auth().form(userid, pwd).get(url).jsonPath().getString("Auth_Tocken");
+	}
 }

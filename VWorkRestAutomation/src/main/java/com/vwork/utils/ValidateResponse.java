@@ -11,14 +11,7 @@ public class ValidateResponse extends Base{
 
 	
 	
-	public static String getAttributeValue(String key)
-	{
-		String value=response
-				.getBody()
-				.jsonPath()
-				.getString(key);
-		return value;
-	}
+	
 	
 	public static void storeResposeToMap(String responsevalue, String expectevalue)
 	{

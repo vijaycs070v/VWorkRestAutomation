@@ -7,6 +7,7 @@ import com.vwork.datahandler.IDataReader;
 import com.vwork.enums.GlobalConstants;
 import com.vwork.utils.Utility;
 
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 public class Base {
@@ -29,6 +30,7 @@ public class Base {
 	public Base() {
 				
 		configReader=DataReader.propertyReader(GlobalConstants.PROPERTYFILE_PATH.getValue());
+		
 	}
 
 	
